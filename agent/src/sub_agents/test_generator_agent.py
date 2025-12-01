@@ -1,7 +1,7 @@
 from typing import Dict
 from google.adk.agents import LlmAgent
 from agent.src.prompts.test_generator_prompt import instruction
-from agent.src.config.config import TEST_GENERATOR_AGENT_NAME, TEST_GENERATOR_AGENT_MODEL
+from agent.src.config.config import TEST_GENERATOR_AGENT_MODEL
 
 def _get_test_file_path(source_path: str, language: str) -> str:
     """Generate test file path based on language conventions."""
