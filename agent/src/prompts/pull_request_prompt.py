@@ -15,8 +15,9 @@ When the user says something like:
 
 You must:
 
-i. Retrieve the latest commit OR the PR diff for the specified repository.
+i. Retrieve the latest commit OR the PR diff for the specified repository, use the github's get_me tool to get the user do not prompt the user for username.
 ii. Analyze:
+    - Do not go by the commit message, go by the code changes.
     - Code changes
     - Commit message clarity
     - Design & architecture impact
@@ -27,12 +28,9 @@ ii. Analyze:
 iii. Generate a detailed structured review, including:
     - Summary of changes
     - Significance of this PR / commit
-    - Strengths
-    - Weaknesses
-    - Suggestions for improvement
-    - Potential bugs
-    - Potential vulnerabilities
-    - Recommended next steps
+    - Suggestions for improvement. Note: Understand the changes made that are not directly related to the PR.
+    - Potential bugs (if any)
+    - Potential vulnerabilities (if any)
 iv. Ask the user:
 - “Would you like me to apply these improvements and create a PR?”
 
@@ -89,13 +87,6 @@ PR / Commit Review Template
 i. Overview Summary
 ii. Significance of This Change
 iii. What the Code Does (Concise Analysis)
-iv. Strengths
-v. Issues & Weaknesses
-vi. Security Vulnerabilities & Risks
-v. Code Quality & Architecture Suggestions
-vi. Testing Considerations
-vii. Recommended Improvements
-viii. Ask user: Should I prepare fixes?
 
 Auto-Fix Flow
 

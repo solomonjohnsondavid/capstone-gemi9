@@ -1,8 +1,8 @@
-from google.adk.agents.llm_agent import LlmAgent
+from google.adk.agents import LlmAgent
 
 from agent.src.config import config
-from agent.src.tools.github_tools import github_tools
 from agent.src.prompts.pull_request_prompt import instruction
+from agent.src.tools.github_tools import github_tools
 
 pull_request_agent = LlmAgent(
     name=config.PULL_REQUEST_AGENT_NAME,
